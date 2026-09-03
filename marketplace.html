@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Soil2Soul – Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=4" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <div class="logo-icon">S2</div>
+          <span>Soil2Soul</span>
+        </div>
+        <nav class="nav-links">
+          <a href="/index.html">Home</a>
+          <a href="/marketplace.html">Marketplace</a>
+          <a href="/requirement.html">Requirement</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page">
+        <h1 class="hero-title" style="font-size: 1.9rem;">
+          Live Farmer Listings <span>Marketplace</span>
+        </h1>
+        <p class="hero-subtitle">
+          Browse real-time produce posted by farmers via the KrishiMitra WhatsApp bot.
+          Filter by crop and location, and contact farmers directly on WhatsApp.
+        </p>
+
+        <div class="section">
+          <div class="card" style="margin-bottom: 1.2rem;">
+            <div class="card-title">Filters</div>
+            <div class="card-body">
+              <form id="marketplace-filter-form" class="form" onsubmit="return false;">
+                <div class="form-group">
+                  <label for="filter-crop">Crop</label>
+                  <input type="text" id="filter-crop" placeholder="e.g. Tomato" />
+                </div>
+                <div class="form-group">
+                  <label for="filter-location">Location</label>
+                  <input
+                    type="text"
+                    id="filter-location"
+                    placeholder="e.g. Bangalore, Karnataka"
+                  />
+                </div>
+                <button id="filter-submit" class="btn btn-primary" type="button">
+                  Search Listings
+                </button>
+                <span id="marketplace-status" class="status"></span>
+              </form>
+            </div>
+          </div>
+
+          <div id="listings-container" class="listings-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Soil2Soul Marketplace – discover farmers, not middlemen.</span>
+      <div>
+        <a href="/index.html">Home</a>·
+        <a href="/requirement.html">Requirement</a>·
+        <a href="/about.html">About</a>
+      </div>
+    </footer>
+    <script src="/script.js?v=4"></script>
+  </body>
+</html>
+
+
